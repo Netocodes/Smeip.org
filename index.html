@@ -6,70 +6,118 @@
     <title>Smart Money Equity Investment Platform</title>
     <link href="./dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-<!-- ========== MAIN CONTENT ========== -->
-<main id="content" class="relative w-full md:w-full h-dvh px-4 sm:px-6  flex flex-col justify-center sm:items-center mx-auto size-full bg-[url('https://img.freepik.com/free-vector/abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-lines-background_1035-11593.jpg?t=st=1723665839~exp=1723669439~hmac=51bfca12cb15561022253a256f780aeab3ba5c797f2850157f40003faa4be82d&w=740')] bg-no-repeat bg-cover">
-    <img src="img/logo-removeBg.png" class="w-[350px] flex justify-center items-center mx-auto" alt="Smeip logo">
-    <div class="w-full md:w-[50%] text-center py-8 px-4 sm:px-6 ">
-  
-        <a class="group inline-flex flex-wrap items-center bg-white/10 hover:bg-white/10 focus:outline-none focus:bg-white/10 border border-white/10 p-1 ps-4 rounded-full shadow-md" href="../figma.html">
-            <p class="me-2 text-white text-sm">
-              SMEIP will be live in 8 weeks.
-            </p>
-            <span class="group-hover:bg-white/10 group-focus:bg-white/10 py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/10 font-semibold text-white text-sm">
-              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </a>
-      <!-- <h2 class="mt-1 sm:mt-3 text-4xl font-bold text-white sm:text-6xl">
-        <span class="bg-clip-text bg-gradient-to-tr from-green-400 to-purple-400 text-transparent">SMEIP
-            <br> <span class="text-sm">(Smart money Equity Investment Platform)</span></span>
-      </h2> -->
-  
-      <form>
-        <div class="mt-8 space-y-4">
-          <div>
-            <label for="hs-cover-with-gradient-form-name-1" class="sr-only">Full name</label>
-            <div class="relative">
-              <input type="text" id="hs-cover-with-gradient-form-name-1" class="py-3 ps-11 pe-4 block w-full bg-white/10 border-white/20 text-white placeholder:text-white rounded-lg text-sm focus:border-white/30 focus:ring-white/30 sm:p-4 sm:ps-11" placeholder="Full name">
-              <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
-                <svg class="shrink-0 size-4 text-gray-400 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <label for="hs-cover-with-gradient-form-email-1" class="sr-only">Email address</label>
-            <div class="relative">
-              <input type="email" id="hs-cover-with-gradient-form-email-1" class="py-3 ps-11 pe-4 block w-full bg-white/10 border-white/20 text-white placeholder:text-white rounded-lg text-sm focus:border-white/30 focus:ring-white/30 sm:p-4 sm:ps-11" placeholder="Email address">
-              <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
-                <svg class="shrink-0 size-4 text-gray-400 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              </div>
-            </div>
-          </div>
-  
-          <div class="grid">
-            <button id="waitlist" type="submit" class="sm:p-4 py-3 px-4 inline-flex justify-center items-center gap-x-2  font-medium rounded-lg border border-transparent bg-gradient-to-tr from-green-400 to-amber-400 text-md text-black hover:bg-white/20 focus:outline-none focus:bg-white/20 disabled:opacity-50 disabled:pointer-events-none">
-              Join the waitlist
-              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </main>
-  <!-- ========== END MAIN CONTENT ========== -->
-  
-  <!-- ========== FOOTER ========== -->
-  <footer class="absolute bottom-0 inset-x-0 text-center py-5">
-    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-sm text-white/50">An organization supported by <a class="text-white/75 underline" href="https://www.google.com/">Google</a>. © 2014 SMEIP</p>
-    </div>
-  </footer>
-  <!-- ========== END FOOTER ========== -->
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
 
+</head>
+<body class="bg-fixed bg-[url('https://img.freepik.com/free-vector/abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-lines-background_1035-11593.jpg?t=st=1723665839~exp=1723669439~hmac=51bfca12cb15561022253a256f780aeab3ba5c797f2850157f40003faa4be82d&w=740')] bg-no-repeat bg-cover w-full">
+  <!-- ========== MAIN CONTENT ========== -->
+  <!-- <nav class="bg-white border-gray-200 dark:bg-gray-900 py-3">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+       
+       <div class="absolute top-0 right-0">
+        <div class="flex ">
+          <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
+          <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+      </div>
+       </div>
+    </div>
+</nav> -->
+<div class="w-full bg-black/25 relative">
+  <div class="max-w-[85rem] mx-auto w-full px-4 py-2 sm:px-6 lg:px-8">
+    <div class=" flex-1 flex items-center justify-end gap-x-3 pt-2">
+    
+  
+      <!-- Button Group -->
+      <div class="flex flex-wrap items-center gap-x-1.5">
+        <div class="relative inline-flex  group">
+          <div
+              class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+          </div>
+          <a href="#" title="Get quote now"
+              class="relative inline-flex items-center justify-center px-4 py-2 text-md md:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button">Sign In
+          </a>
+      </div>
+        <div class="relative inline-flex  group">
+          <div
+              class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+          </div>
+          <a href="#" title="Get quote now"
+              class="relative inline-flex items-center justify-center px-4 py-2  text-md md:text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button">Get Started
+          </a>
+      </div>
+        
+      </div>
+      <!-- End Button Group -->
+    </div>
+  </div>
+</div>
+
+<nav class="border-gray-200 bg-black py-0 md:py-2 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a class="flex-none font-bold text-xl md:text-[40px] text-white focus:outline-none focus:opacity-80 dark:text-white italic" href="#" aria-label="Brand">SMEIP <small class="text-sm">(Invest Smart!!)</small></a>
+
+  <div class="flex md:order-2">
+  
+    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+      </svg>
+      <span class="sr-only">Search</span>
+    </button>
+    <div class="relative hidden md:block">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+        </svg>
+        <span class="sr-only">Search icon</span>
+      </div>
+      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+    </div>
+    <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+    <div class="items-center justify-between focus:outline-none focus:ring-2 focus:ring-amber-500 hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+      <div class="relative mt-3 md:hidden">
+        <div class="absolute inset-y-0 start-0 flex items-center  ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+        </div>
+        <input type="text" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+      </div>
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:font-bold border border-amber-500 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block text-md md:text-lg py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">How It Works</a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Plans & Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   <script src="./node_modules/preline/dist/preline.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./src/script.js"></script>
+ 
 </body>
 </html>

@@ -2,9 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define light mode styles */
-.force-light-mode {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
+@import '@preline/plugin';

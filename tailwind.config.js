@@ -1,8 +1,8 @@
 
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{html,js}",
-                        "../index.html",
-                        '../node_modules/preline/dist/*.js',
+                        "./index.html",
+                        './dist/preline/preline/*.js',
 ];
 export const theme = {
   extend: {
@@ -13,7 +13,7 @@ export const theme = {
 };
 
 export const plugins = [
- 
+ require('@preline/plugin'),
   require('@tailwindcss/forms'),      
   require('@preline/overlay'),
   require('autoprefixer'),

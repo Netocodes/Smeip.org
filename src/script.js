@@ -1,4 +1,4 @@
-alert('after veiwing pls rest starkie so i can work pacefully, ps the text here is of no use its random and not well thought of.. NetoCodes')
+// alert('after veiwing pls rest starkie so i can work pacefully, ps the text here is of no use its random and not well thought of.. NetoCodes')
 
 // Force light mode
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -16,7 +16,7 @@ document.addEventListener('scroll', () => {
     fixedNav.classList.add("fixed"),
     fixedNav.classList.add("top-0"),
     fixedNav.classList.add("md:bg-black/75"),
-    fixedNav.classList.add("bg-black"),
+    fixedNav.classList.add("bg-black/75"),
     fixedNav.classList.add("md:py-0"),
     fixedNav.classList.add("shadow-lg")
    
@@ -24,7 +24,8 @@ document.addEventListener('scroll', () => {
 else{
     fixedNav.classList.remove("fixed")
     fixedNav.classList.remove("top-0"),
-    fixedNav.classList.remove("bg-black"),
+    fixedNav.classList.remove("md:bg-black/75"),
+    fixedNav.classList.remove("bg-black/75"),
     fixedNav.classList.remove("md:py-0"),
     fixedNav.classList.remove("shadow-lg")
 }

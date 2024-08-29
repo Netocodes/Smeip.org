@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "NetoCodes",
@@ -11,16 +10,12 @@
   "description": "Smart Money Equity Investment Platform",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
-    "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.10"
   },
   "dependencies": {
     "@preline/carousel": "^2.4.1",
     "@preline/overlay": "^2.4.1",
     "@tailwindcss/forms": "^0.5.7",
-    "dotenv": "^16.4.5",
-    "izitoast": "^1.4.0",
     "preline": "^2.4.1"
   }
 }

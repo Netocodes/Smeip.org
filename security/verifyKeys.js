@@ -16,6 +16,21 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Show the preloader
+  const preloader = document.getElementById("preloader");
+  preloader.classList.remove("hidden");
+
+  // Hide the preloader and show the content once the page has fully loaded
+  window.addEventListener("load", function () {
+    preloader.classList.add("hidden");
+    
+    // Optionally, reveal the content with a fade-in effect
+    const content = document.getElementById("content");
+    content.classList.remove("opacity-0");
+    content.classList.add("opacity-100", "transition-opacity", "duration-500");
+  });
+});
 
 
 // Initialize Firebase
@@ -41,6 +56,10 @@ async function login(e) {
            const docSnap = await getDoc(ref);
 
            if (docSnap.exists()) {
+            localStorage.setItem("user-info", JSON.stringify({
+              fullname: docSnap.data().fullname,
+              email: docSnap.data().email,
+            }));
             const userInfo = docSnap.data();
             const userName =  userInfo.fullname
       console.log(userName);
@@ -64,10 +83,10 @@ async function login(e) {
   } catch (error) {
     console.log(error.message)
     Swal.fire({
-      title: 'Error!',
+      title: 'Could not Login!',
       background:'#000000',
       color:'#ffffff',
-      text: 'Network error could not Register',
+      text: 'Check your password and try again ',
       icon: 'error',
       confirmButtonText: 'OK'
     });
@@ -115,5 +134,7 @@ let googleadd = document.getElementById("googleRegister")
 googleadd.addEventListener("click", googleSignin);
 subBtn.addEventListener("submit", (e) => {
   e.preventDefault();
+  preloader.classList.remove("hidden");
+
   login(e)
 })

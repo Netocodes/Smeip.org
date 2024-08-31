@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-pt-20">
   <head>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#10CE53">
@@ -14,14 +14,28 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" />
+
+
   </head>
   <body
-    class="bg-fixed text-white bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full"
+    class="scroll-smooth bg-fixed text-white bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full"
   >
+  <section id="preloader" class="fixed z-[50] w-full min-h-screen bg-[url('https://img.freepik.com/free-vector/glowing-fractal-grid-wave-background_52683-13606.jpg?t=st=1725126167~exp=1725129767~hmac=5dafed59455b524b71e91695021303050446f884b882f29b8f5ea724843df1bd&w=900') flex items-center justify-center bg-black/75">
+    <div class="loader-inner pacman ">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </div>
+  </section>
+
+  <div id="content">
     <!-- ========== MAIN CONTENT ========== -->
     <div class="w-full bg-white/25 relative hidden md:flex">
       <div class="max-w-[85rem] mx-auto w-full px-4 py-2 sm:px-6 lg:px-8">
@@ -260,7 +274,7 @@
           >
             <li>
               <a
-                href="#"
+                href="#home"
                 class="block text-md md:text-lg py-2 px-3 text-white bg-[#10CE53] rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
                 aria-current="page"
                 >Home</a
@@ -268,7 +282,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#service-section"
                 class="block text-md py-2 px-3 text-gray-200 rounded hover:bg-[#10CE53] md:hover:bg-transparent md:hover:text-[#10CE53] md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 > Services</a
               >
@@ -307,21 +321,21 @@
                 >
                   <li>
                     <a
-                      href="#"
+                      href="./payment.html"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Investment Plan</a
                     >
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#testimonial-section"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Faq</a
+                      >Testiomonials</a
                     >
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#contact-section"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Contact Us</a
                     >
@@ -332,14 +346,14 @@
 
             <li>
               <a
-                href="#"
+                href="#faq-section"
                 class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-[#10CE53] md:hover:bg-transparent md:hover:text-[#10CE53] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >How It Works</a
+                >FAQ's</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="./payment.html"
                 class="block text-md py-2 px-3 text-gray-100 rounded hover:bg-[#10CE53] md:hover:bg-transparent md:hover:text-[#10CE53] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Plans & Pricing</a
               >
@@ -354,7 +368,7 @@
 
     <!-- ========== Hero-Section ========== -->
     <!-- Slider -->
-    <main class="w-full">
+    <main id="home"  class="w-full">
       <div
         data-hs-carousel='{
       "loadingClasses": "opacity-0"
@@ -383,7 +397,7 @@
                   <div class="mt-5">
                     <a
                       class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                      href="#"
+                      href="./payment.html"
                     >
                       Invest Here
                     </a>
@@ -409,7 +423,7 @@
                   <div class="mt-5">
                     <a
                       class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                      href="#"
+                      href="./payment.html"
                     >
                       Invest Here
                     </a>
@@ -434,7 +448,7 @@
                   <div class="mt-5">
                     <a
                       class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                      href="#"
+                      href="./payment.html"
                     >
                       Invest Here
                     </a>
@@ -548,10 +562,10 @@
 
 
     
-<!-- ========== About Us ========== -->
+<!-- ========== Service ========== -->
 <!-- Icon Blocks -->
 
-<div class="bg-black/50 w-full text-white px-4 py-10  mx-auto">
+<div id="service-section"  class="scroll-mt-26 bg-black/50 w-full text-white px-4 py-10  mx-auto">
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center py-12">
       <h2 class="text-2xl font-bold md:text-4xl md:leading-tight underline underline-offset-4 decoration-[#10CE53] decoration-4">What we Offer</h2>
@@ -571,7 +585,7 @@
           <div class="mt-5 flex justify-center items-center">
             <a
               class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-              href="#"
+              href="./payment.html"
             >
               Invest Here
             </a>
@@ -591,7 +605,7 @@
         <div class="mt-5 flex justify-center items-center">
           <a
             class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-            href="#"
+            href="./payment.html"
           >
             Invest Here
           </a>
@@ -610,7 +624,7 @@
         <div class="mt-5 flex justify-center items-center">
           <a
             class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-            href="#"
+            href="./payment.html"
           >
             Invest Here
           </a>
@@ -640,11 +654,11 @@
   </div>
 </div>
 <!-- End Icon Blocks -->
-<!-- ========== About Us ========== -->
+<!-- ========== service ========== -->
 
 
     <!-- ========== About Us ========== -->
-    <div class="w-full bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950" >
+    <div id="about-section" class="scroll-mt-16 w-full bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950" >
       <!-- Features -->
         <!-- Title -->
   <div class="max-w-2xl mx-auto text-center py-8">
@@ -719,7 +733,7 @@
 
 <!-- ========== Testimonials ========== -->
  <!-- Testimonials -->
-<div id="testimonials" class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="testimonial-section" class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Slider -->
 <div data-hs-carousel='{
   "loadingClasses": "opacity-0",
@@ -788,7 +802,7 @@
           </div>
       
           <footer class="mt-6">
-            <div class="font-semibold text-gray-200 dark:text-neutral-200 underline underline-offset-4 decoration-[#10CE53] decoration-4">Emily clerk Jones</div>
+            <div class="font-semibold text-gray-200 dark:text-neutral-200 underline underline-offset-4 decoration-[#10CE53] decoration-4">Emily jane Reeves</div>
             <div class="text-sm text-gray-300 dark:text-neutral-500">Top Investor | Telegram Official Group</div>
           </footer>
         </blockquote>
@@ -842,8 +856,7 @@
         <!-- Blockquote -->
         <blockquote>
                    <p class="text-xl font-medium text-gray-200 lg:text-2xl lg:leading-normal dark:text-neutral-200">
-            To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.
-          </p>
+Invest with SMEIP today. We're revolutionizing the future of finance—10x your returns with the best minds in the industry          </p>
 
           <footer class="mt-6">
             <div class="flex items-center">
@@ -874,7 +887,9 @@
 <!-- End Testimonials -->
 </div>
 <!-- End Testimonials -->
-<!-- ========== About Us ========== -->
+<!-- ==========  Testimonials ========== -->
+
+
 
 <!-- ========== companies section ========== -->
  <!-- Clients -->
@@ -1035,7 +1050,7 @@
 
 <!-- ========== Question And Answers ========== -->
  <!-- FAQ -->
-  <section id="faq" class="w-full bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950">
+  <section id="faq-section" class="scroll-mt-26 w-full bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950">
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Grid -->
       <div class="grid md:grid-cols-5 gap-10">
@@ -1138,7 +1153,7 @@
 
 <!-- ========== Contact Us ========== -->
  <!-- Contact Us -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="contact-section" class="scroll-mt-26 max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div class="max-w-xl mx-auto">
     <div class="text-center">
       <h1 class="text-3xl font-bold text-gray-100 underline underline-offset-4 decoration-[#10CE53] decoration-4 sm:text-4xl dark:text-white">
@@ -1210,7 +1225,7 @@
 
   <div class="bg-black/75 rounded-lg mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
     <!-- Icon Block -->
-    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
+    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
       <svg class="size-9 text-[#10CE53] mx-auto dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
       <div class="mt-5">
         <h3 class="text-lg font-semibold text-gray-200 dark:text-neutral-200">Knowledgebase</h3>
@@ -1224,7 +1239,7 @@
     <!-- End Icon Block -->
 
     <!-- Icon Block -->
-    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
+    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#faq-section">
       <svg class="size-9 text-[#10CE53] mx-auto dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
       <div class="mt-5">
         <h3 class="text-lg font-semibold text-gray-200 dark:text-neutral-200">FAQ</h3>
@@ -1238,7 +1253,7 @@
     <!-- End Icon Block -->
 
     <!-- Icon Block -->
-    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
+    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
       <svg class="size-9 text-[#10CE53] mx-auto dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
       <div class="mt-5">
         <h3 class="text-lg font-semibold text-gray-200 dark:text-neutral-200">Code Base</h3>
@@ -1357,7 +1372,7 @@
 </footer>
 <!-- ========== END FOOTER ========== -->
 
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="../dist/preline.js"></script>
     <script

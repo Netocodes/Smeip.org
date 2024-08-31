@@ -24,6 +24,21 @@ const passwordInp = document.getElementById("password");
 const comfirmPassword = document.getElementById("confirm-password");
 const Submitregister = document.getElementById("Submitregister");
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Show the preloader
+  const preloader = document.getElementById("preloader");
+  preloader.classList.remove("hidden");
+
+  // Hide the preloader and show the content once the page has fully loaded
+  window.addEventListener("load", function () {
+    preloader.classList.add("hidden");
+    
+    // Optionally, reveal the content with a fade-in effect
+    const content = document.getElementById("content");
+    content.classList.remove("opacity-0");
+    content.classList.add("opacity-100", "transition-opacity", "duration-500");
+  });
+});
 
 
 
@@ -123,4 +138,4 @@ const userRef = doc(db, "userAuthList", googlecred.user.uid);
 let googleadd = document.getElementById("googleRegister")
 googleadd.addEventListener("click", googleSignin);
 
-Submitregister.addEventListener('submit', registerUser);
+Submitregister.addEventListener('submit',registerUser);

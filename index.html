@@ -14,18 +14,39 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-   
-  </head>
-  <body
-    class="bg-fixed text-white bg-black/75 bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  </head>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" />
+
+<body
+    class="bg-fixed text-white font-[Cinzel] bg-black/75 bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full"
   >
+  <section id="preloader" class="fixed z-[50] w-full min-h-screen bg-[url('https://img.freepik.com/free-vector/glowing-fractal-grid-wave-background_52683-13606.jpg?t=st=1725126167~exp=1725129767~hmac=5dafed59455b524b71e91695021303050446f884b882f29b8f5ea724843df1bd&w=900') flex items-center justify-center bg-black/75">
+    <div class="loader-inner pacman ">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </div>
+  </section>
+  <div id="content">
   <!-- Announcement Banner -->
-<a class=" group block bg-white/75 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 rounded-lg text-center transition duration-300 dark:bg-white/10 dark:hover:bg-white/10 dark:focus:bg-white/10" href="../security/login.html">
+<a class=" group block bg-gray-200 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 rounded-lg text-center transition duration-300 dark:bg-white/10 dark:hover:bg-white/10 dark:focus:bg-white/10" href="../security/login.html">
   <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-    <p class="me-2 inline-block text-md text-gray-800 dark:text-neutral-200">
+    <p class="me-2 inline-block font-[Raleway] font-semibold  text-md text-gray-800 dark:text-neutral-200">
       Exciting News! We’ve surpassed $55M in raised capital. Join SMEIP for unbeatable growth
     </p>
-    <span class="group-hover:underline group-focus:underline decoration-2 inline-flex justify-center items-center gap-x-2 font-semibold text-amber-500 text-xl dark:text-blue-500">
+    <span class="animate__animated animate__backInLeft animate__delay-1s font-[Raleway] group-hover:underline group-focus:underline decoration-2 inline-flex justify-center items-center gap-x-2 font-bold text-amber-500 text-xl dark:text-blue-500">
       Invest Now
       <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     </span>
@@ -47,7 +68,8 @@
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
           <h2 class="font-bold text-3xl mg:text-5xl text-gray-200 dark:text-neutral-200">
-            Invest at the comfort of your Home as easy with <span class="text-green-500 underline underline-offset-8 decoration-green-500" >{
+            Invest at the comfort of your Home as easy with<span class="text-green-500 underline underline-offset-8 decoration-green-500" >
+              {
             <i class="text-white" >SMEIP</i>  
             }</span>
           </h2>
@@ -94,13 +116,10 @@
         </ul>
         <!-- End List -->
         <div class="flex justify-center items-center gap-x-3">
-          <a
-          class="mt-8 py-3 px-5 inline-flex items-center gap-x-2 text-lg font-bold rounded-xl bg-amber-500 border border-transparent text-white  focus:outline-none focus:bg-green-500 disabled:opacity-50 disabled:pointer-events-none"
-          href="./security/register.html"
-          >
-          Register
-          </a>
-              <a
+          <button id="btnt-1" type="button" class="mt-8 py-4 px-4 inline-flex items-center gap-x-2 text-lg font-medium rounded-lg border  border-amber-500 text-white hover:border-amber-500 hover:text-white/70 focus:outline-none focus:border-amber-500 focus:text-white/70 disabled:opacity-50 disabled:pointer-events-none">
+            <a href="./security/register.html">Register</a>
+          </button>
+              <a id="btnt-2"
           class="mt-8 py-3 px-5 inline-flex items-center gap-x-2 text-lg font-bold rounded-xl bg-amber-500 border border-transparent text-white  focus:outline-none focus:bg-green-500 disabled:opacity-50 disabled:pointer-events-none"
           href="./security/login.html"
           >
@@ -141,7 +160,7 @@
   <div class="relative z-10">
     <div class="max-w-5xl px-4 xl:px-0 mx-auto">
       <div class="mb-4">
-        <h2 class="text-neutral-400">Trusted by Various <a href="./src/mainpage.html">companies</a>, and more than 99,000 of you</h2>
+        <h2 class="text-neutral-400">Trusted by Various <a href="#">companies</a>, and more than 99,000 of you</h2>
       </div>
 
       <div class="flex justify-between gap-6">
@@ -159,7 +178,7 @@
   </div>
 </div>
 <!-- End Clients -->
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="./dist/preline.js"></script>
     <script
@@ -168,7 +187,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+   <script>
+    const button1 = document.getElementById("btnt-1")
+    const button2 = document.getElementById("btnt-2")
    
+   button1.addEventListener('click', () => {
+    preloader.classList.remove("hidden");
+    })
+   button2.addEventListener('click', () => {
+    preloader.classList.remove("hidden");
+    })
+   
+    document.addEventListener("DOMContentLoaded", function () {
+  // Show the preloader
+  const preloader = document.getElementById("preloader");
+  preloader.classList.remove("hidden");
+
+  // Hide the preloader and show the content once the page has fully loaded
+  window.addEventListener("load", function () {
+    preloader.classList.add("hidden");
+    
+    // Optionally, reveal the content with a fade-in effect
+    const content = document.getElementById("content");
+    content.classList.remove("opacity-0");
+    content.classList.add("opacity-100", "transition-opacity", "duration-500");
+  });
+});
+
+   </script>
   </body>
 </html>
 

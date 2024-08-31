@@ -9,7 +9,10 @@ export const theme = {
   extend: {
     colors: {
       'midnight': '#10CE53',
-    }
+    },
+    fontFamily: {
+      cinzel: ['Cinzel', 'serif'], 
+    },
   },
 };
 

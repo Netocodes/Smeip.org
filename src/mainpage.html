@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#10CE53">
-    
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
     <title>Smart Money Equity Investment Platform</title>
     <link href="../dist/output.css" rel="stylesheet" />
@@ -16,11 +14,16 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" />
 
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> 
   </head>
-  <body
-    class="scroll-smooth bg-fixed text-white bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full"
-  >
+  <body class="scroll-smooth bg-fixed font-[Cinzel] text-white bg-[url('https://img.freepik.com/free-vector/technology-particle-abstract-background_52683-26466.jpg?t=st=1724091486~exp=1724095086~hmac=e35fe6733ac10104982c4eb347791ec131e8148366c4b5a42ead723d4832123b&w=900')] bg-no-repeat bg-cover w-full">
+    <div class="fixed z-[50] bottom-20 right-6">
+      <div class="animate__animated animate__swing animate__repeat-infinite animate__delay-2s relative  flex justify-center items-center size-14 rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-neutral-900">
+        <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg>      </div>
+    </div>
   <section id="preloader" class="fixed z-[50] w-full min-h-screen bg-[url('https://img.freepik.com/free-vector/glowing-fractal-grid-wave-background_52683-13606.jpg?t=st=1725126167~exp=1725129767~hmac=5dafed59455b524b71e91695021303050446f884b882f29b8f5ea724843df1bd&w=900') flex items-center justify-center bg-black/75">
     <div class="loader-inner pacman ">
      <div></div>
@@ -102,7 +105,7 @@
       id="navigation" class=" z-[50] w-full border-gray-200 md:bg-black/25 py-0 md:py-2 dark:bg-gray-900"
     >
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a
           class="inline-flex font-bold text-[30px] md:text-[40px] text-white focus:outline-none focus:opacity-80 dark:text-white italic text-gradient-to-r from-blue-600 via-green-500 to-indigo-400"
@@ -376,7 +379,7 @@
         class="relative"
       >
         <div
-          class="hs-carousel relative overflow-hidden w-full h-[40rem] md:h-[calc(100vh-106px)] bg-gray-100 rounded-2xl dark:bg-neutral-800"
+          class="hs-carousel relative overflow-hidden w-full h-[40rem] md:h-[80dvh] bg-gray-100 rounded-2xl dark:bg-neutral-800"
         >
           <div
             class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0"
@@ -384,7 +387,7 @@
             <!-- Item -->
             <div class="hs-carousel-slide">
               <div
-                class="h-[40rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('https://img.freepik.com/free-photo/group-diverse-managers-businesspeople-analyzing-company-graphs_482257-2396.jpg?t=st=1723839964~exp=1723843564~hmac=02b43b57f02c86a791b1b378538bdb0834f120b74935b94dfa3b6e7bea546303&w=1060')] bg-cover bg-center bg-no-repeat"
+                class="h-[40rem] md:h-[80dvh] flex flex-col bg-[url('https://img.freepik.com/free-photo/group-diverse-managers-businesspeople-analyzing-company-graphs_482257-2396.jpg?t=st=1723839964~exp=1723843564~hmac=02b43b57f02c86a791b1b378538bdb0834f120b74935b94dfa3b6e7bea546303&w=1060')] bg-cover bg-center bg-no-repeat"
               >
                 <div
                   class="mt-auto w-screen bg-black/75 p-8 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10"
@@ -396,7 +399,7 @@
                   >
                   <div class="mt-5">
                     <a
-                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                       href="./payment.html"
                     >
                       Invest Here
@@ -410,7 +413,7 @@
             <!-- Item -->
             <div class="hs-carousel-slide">
               <div
-                class="h-[40rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg?t=st=1723840387~exp=1723843987~hmac=f6b93ea5d3a78a88f7d678c7699d3ff06bd5f3942acef1cd5521225f3abd1d65&w=900')] bg-cover bg-center bg-no-repeat"
+                class="h-[40rem] md:h-[80dvh] flex flex-col bg-[url('https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg?t=st=1723840387~exp=1723843987~hmac=f6b93ea5d3a78a88f7d678c7699d3ff06bd5f3942acef1cd5521225f3abd1d65&w=900')] bg-cover bg-center bg-no-repeat"
               >
                 <div
                   class="mt-auto w-screen bg-black/75 p-8 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10"
@@ -422,7 +425,7 @@
                   >
                   <div class="mt-5">
                     <a
-                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                       href="./payment.html"
                     >
                       Invest Here
@@ -436,7 +439,7 @@
             <!-- Item -->
             <div class="hs-carousel-slide">
               <div
-                class="h-[40rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('https://img.freepik.com/free-photo/successful-multiethnic-businesspeople-greeting-each-other_74855-1644.jpg?t=st=1723841192~exp=1723844792~hmac=14aca8d3587ec80e9a9a42eb0b52c51919ed5f6e031781f8774e8f8c12cfa27f&w=826')] bg-cover bg-center bg-no-repeat"
+                class="h-[40rem] md:h-[80dvh] flex flex-col bg-[url('https://img.freepik.com/free-photo/successful-multiethnic-businesspeople-greeting-each-other_74855-1644.jpg?t=st=1723841192~exp=1723844792~hmac=14aca8d3587ec80e9a9a42eb0b52c51919ed5f6e031781f8774e8f8c12cfa27f&w=826')] bg-cover bg-center bg-no-repeat"
               >
                 <div
                   class="mt-auto w-screen bg-black/75 p-8 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10"
@@ -447,7 +450,7 @@
                   >
                   <div class="mt-5">
                     <a
-                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                       href="./payment.html"
                     >
                       Invest Here
@@ -512,7 +515,7 @@
 
 
 
-    <!-- ========== Hero-Section ========== -->
+    <!-- ========== Hero-subSection ========== -->
  <!-- Stats -->
 <section class="bg-gradient-to-bl from-neutral-800 via-neutral-900 to-neutral-950">
   <div class="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
@@ -558,7 +561,7 @@
   </div>
 </section>
 <!-- End Stats -->
-    <!-- ========== Hero-Section ========== -->
+    <!-- ========== Hero-subSection ========== -->
 
 
     
@@ -584,7 +587,7 @@
           </p>
           <div class="mt-5 flex justify-center items-center">
             <a
-              class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+              class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
               href="./payment.html"
             >
               Invest Here
@@ -604,7 +607,7 @@
         <p class="mt-5 text-md md:text-lg text-gray-100">We understand that your financial goals are unique, and SMEIP is here to tailor investment strategies just for you. Our personalized plans are designed to fit your specific needs, ensuring you’re always on track toward your objectives.</p>
         <div class="mt-5 flex justify-center items-center">
           <a
-            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+            class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             href="./payment.html"
           >
             Invest Here
@@ -623,7 +626,7 @@
         <p class="mt-5 text-md md:text-lg text-gray-100">With SMEIP, you’re supported by a team of financial experts who are committed to your success. We provide clear, actionable guidance based on real market insights, helping you make smart, informed investment decisions every step of the way.</p>
         <div class="mt-5 flex justify-center items-center">
           <a
-            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+            class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             href="./payment.html"
           >
             Invest Here
@@ -642,7 +645,7 @@
         <p class="mt-5  text-md md:text-lg text-gray-100">With SMEIP, you’re supported by a team of financial experts who are committed to your success. We provide clear, actionable guidance based on real market insights, helping you make smart, informed investment decisions every step of the way.</p>
         <div class="mt-5 flex justify-center items-center">
           <a
-            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+            class="py-2 px-3 inline-flex items-center gap-x-2 text-md font-semibold rounded-xl bg-amber-500 border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             href="./payment.html"
           >
             Invest Here
@@ -662,8 +665,8 @@
       <!-- Features -->
         <!-- Title -->
   <div class="max-w-2xl mx-auto text-center py-8">
-    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight underline underline-offset-4 decoration-[#10CE53] decoration-4">About Us</h2>
-    <p class="mt-3 text-gray-300 dark:text-neutral-400">A Quick Overview about our company and Invsetment Plans</p>
+    <h2 class="text-2xl font-bold md:text-5xl font-[raleway] md:leading-tight underline underline-offset-4 decoration-[#10CE53] decoration-4">About Us</h2>
+    <p class="mt-3 text-gray-300 text-md md:text-lg dark:text-neutral-400">A Quick Overview about our company and Invsetment Plans</p>
   </div>
   <!-- End Title -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -682,7 +685,7 @@
           <h2 class="font-bold text-3xl lg:text-4xl text-gray-200 ">
             We are Smart Money Equity Investment Platform <small>(SMEIP)</small>
           </h2>
-          <p class="text-gray-200 dark:text-neutral-500">
+          <p class="text-md md:text-xl text-gray-200 dark:text-neutral-500">
             SMEIP, founded in 2014, is a trusted investment platform that leverages cryptocurrency to grow your wealth. We specialize in turning your investments into significant returns, offering the potential to earn ten times your initial contribution through strategic crypto investments          </p>
         </div>
         <!-- End Title -->
@@ -694,8 +697,8 @@
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M4 12.9L7.14286 16.5L15 7.5" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.0002 7.5625L11.4286 16.5625L11.0002 16" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </span>
             <div class="grow">
-              <span class="text-lg sm:text-base text-gray-200 dark:text-neutral-500">
-                <span class="font-bold">High</span> Returns
+              <span class="text-md md:text-xl text-gray-200 dark:text-neutral-500">
+                <span class="text-md md:text-xl font-bold">High</span> Returns
               </span>
             </div>
           </li>
@@ -704,8 +707,8 @@
             <span class="mt-0.5 size-5 flex justify-center items-center rounded-full  ">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M4 12.9L7.14286 16.5L15 7.5" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.0002 7.5625L11.4286 16.5625L11.0002 16" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>            </span>
             <div class="grow">
-              <span class="text-lg sm:text-base text-gray-200 dark:text-neutral-500">
-                Active  <span class="font-bold">Management</span>
+              <span class="text-md md:text-xl text-gray-200 dark:text-neutral-500">
+                Active  <span class="text-md md:text-xl font-bold">Management</span>
               </span>
             </div>
           </li>
@@ -714,7 +717,7 @@
             <span class="mt-0.5 size-5 flex justify-center items-center rounded-full ">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.5" d="M4 12.9L7.14286 16.5L15 7.5" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.0002 7.5625L11.4286 16.5625L11.0002 16" stroke="#10CE53" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>            </span>
             <div class="grow">
-              <span class="text-lg md:text-xl text-gray-200 dark:text-neutral-500">
+              <span class="text-md md:text-xl text-gray-200 dark:text-neutral-500">
                 Proven Success
               </span>
             </div>
@@ -955,7 +958,7 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
 
 <!-- ========== Image Blog ========== -->
  <!-- Card Blog -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="blog-Section"  class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Grid -->
   <div class="grid lg:grid-cols-2 gap-6">
     <!-- Card -->
@@ -1177,12 +1180,12 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
           <!-- Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             <div>
-              <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-300 font-medium dark:text-white">First Name</label>
+              <label for="hs-firstname-contacts-1" class="block mb-2 text-lg text-gray-300 font-medium dark:text-white">First Name</label>
               <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="bg-gray-200 py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-amber-500 focus:ring-amber-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
             </div>
 
             <div>
-              <label for="hs-lastname-contacts-1" class="block mb-2 text-sm text-gray-300 font-medium dark:text-white">Last Name</label>
+              <label for="hs-lastname-contacts-1" class="block mb-2 text-lg text-gray-300 font-medium dark:text-white">Last Name</label>
               <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-amber-500 focus:ring-amber-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
             </div>
           </div>
@@ -1191,19 +1194,19 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
           <!-- Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             <div>
-              <label for="hs-email-contacts-1" class="block mb-2 text-sm text-gray-300 font-medium dark:text-white">Email</label>
+              <label for="hs-email-contacts-1" class="block mb-2 text-lg text-gray-300 font-medium dark:text-white">Email</label>
               <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-amber-500 focus:ring-amber-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
             </div>
 
             <div>
-              <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-300 font-medium dark:text-white">Phone Number</label>
+              <label for="hs-phone-number-1" class="block mb-2 text-lg text-gray-300 font-medium dark:text-white">Phone Number</label>
               <input type="text" name="hs-phone-number-1" id="hs-phone-number-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-amber-500 focus:ring-amber-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
             </div>
           </div>
           <!-- End Grid -->
 
           <div>
-            <label for="hs-about-contacts-1" class="block mb-2 text-sm text-gray-300 font-medium dark:text-white">Details</label>
+            <label for="hs-about-contacts-1" class="block mb-2 text-lg text-gray-300 font-medium dark:text-white">Details</label>
             <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-amber-500 focus:ring-amber-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"></textarea>
           </div>
         </div>
@@ -1225,7 +1228,7 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
 
   <div class="bg-black/75 rounded-lg mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
     <!-- Icon Block -->
-    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
+    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#contact-section">
       <svg class="size-9 text-[#10CE53] mx-auto dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
       <div class="mt-5">
         <h3 class="text-lg font-semibold text-gray-200 dark:text-neutral-200">Knowledgebase</h3>
@@ -1253,7 +1256,7 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
     <!-- End Icon Block -->
 
     <!-- Icon Block -->
-    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#">
+    <a class="group flex flex-col h-full text-center rounded-lg hover:bg-white/25 focus:outline-none focus:bg-black/75 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10" href="#contact-section">
       <svg class="size-9 text-[#10CE53] mx-auto dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
       <div class="mt-5">
         <h3 class="text-lg font-semibold text-gray-200 dark:text-neutral-200">Code Base</h3>
@@ -1291,9 +1294,9 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
         <h4 class="font-semibold text-gray-100">Product</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Investment Plans</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Equity Options</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Portfolio Management</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./payment.html">Investment Plans</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./payment.html">Equity Options</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./payment.html">Portfolio Management</a></p>
         </div>
       </div>
       <!-- End Col -->
@@ -1302,10 +1305,10 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
         <h4 class="font-semibold text-gray-100">Company</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">About us</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Blog</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Careers</a> <span class="inline-block ms-1 text-xs bg-[#10CE53] text-white font-bold py-1 px-2 rounded-lg">We're not hiring</span></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#testimonials">Customers</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#about-section">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#blog-Section">Blog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#testimonial-section">Careers</a> <span class="inline-block ms-1 text-xs bg-[#10CE53] text-white font-bold py-1 px-2 rounded-lg">We're not hiring</span></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#testimonial-section">Customers</a></p>
         </div>
       </div>
       <!-- End Col -->
@@ -1313,18 +1316,18 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
       <div class="col-span-2">
         <h4 class="font-semibold text-gray-100">Stay up to date</h4>
 
-        <form>
+        <form id="suscribe-email">
           <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
             <div class="w-full">
               <label for="hero-input" class="sr-only">Subscribe</label>
-              <input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Enter your email">
+              <input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full text-black border-transparent rounded-lg text-lg focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Enter your email">
             </div>
-            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-              Subscribe
-            </a>
+            
+              <button class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" type="submit" >Subscribe</button>
+            
           </div>
           <p class="mt-3 text-sm text-gray-400">
-            For our nonthly giveaways 
+            For our Monthly giveaways 
           </p>
         </form>
       </div>
@@ -1344,26 +1347,31 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
           </svg>
+          <p class="sr-only">social brands</p>
         </a>
         <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
           </svg>
+          <p class="sr-only">social brands</p>
         </a>
         <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
           </svg>
+          <p class="sr-only">social brands</p>
         </a>
         <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
           </svg>
+          <p class="sr-only">social brands</p> 
         </a>
         <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
           </svg>
+          <p class="sr-only">social brands</p>
         </a>
       </div>
       <!-- End Social Brands -->
@@ -1373,6 +1381,8 @@ Invest with SMEIP today. We're revolutionizing the future of finance—10x your 
 <!-- ========== END FOOTER ========== -->
 
 </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="../dist/preline.js"></script>
     <script

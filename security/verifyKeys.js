@@ -60,6 +60,8 @@ async function login(e) {
               fullname: docSnap.data().fullname,
               email: docSnap.data().email,
             }));
+            localStorage.setItem("user-creds", JSON.stringify(credentials.user));
+
             const userInfo = docSnap.data();
             const userName =  userInfo.fullname
       console.log(userName);
@@ -68,7 +70,7 @@ async function login(e) {
         title: 'Success!',
         background:'#000000',
         color:'#ffffff',
-        text: 'You have been Registed Successfully Welcome to {SMEIP}.',
+        text: 'You have been Verified Succesfully invest Smart!!!.',
         icon: 'success',
         confirmButtonText: 'OK'
       });
@@ -110,7 +112,7 @@ const userRef = doc(db, "userAuthList", googlecred.user.uid);
       title: 'Success!',
       background:'#000000',
       color:'#ffffff',
-      text: 'You have been Registed Successfully Welcome to {SMEIP}.',
+      text: 'You have been Verified Succesfully invest Smart!!!.',
       icon: 'success',
       confirmButtonText: 'OK'
     });
